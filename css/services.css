@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Monoton|Reem+Kufi|Righteous|Spicy+Rice|Baloo+Da+2|Lobster|Piedra|Trade+Winds|Galindo|Reem+Kufi|Aref+Ruqaa:wght@700|Saira+Stencil+One|Vollkorn+SC:wght@700|Barriecito|Sedgwick+Ave+Display|Black+And+White+Picture|Bungee+Inline&display=swap");
+
+* {
+  box-sizing: border-box
+}
+
+/* navigation bar */
+nav .container {
+  background-color: #3c7fac;
+}
+
+img[title="logoo"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.nav-item .nav-link {
+  color: white !important;
+  font-size: 18px;
+}
+
+.nav-item.active a {
+  background-color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  color: black !important;
+}
+
+/* navigation bar */
+
+.divimg {
+  overflow: hidden;
+  border: 2px solid black;
+  display: block;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.divimg:hover {
+  text-decoration: none;
+}
+
+.p {
+  background: #10cab7;
+  color: white;
+  line-height: 15px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+
+}
+
+
+.roww {
+  display: grid;
+  gap: 40px;grid-template-columns: repeat(auto-fill, minmax(453px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(453px, 1fr));
+}
+
+.divimg img {
+  display: inline-block;
+  width: 100%;
+}
+
+#container {
+  text-align: center;
+  padding: 20px 100px 50px 100px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    padding: 20px 10px 50px;
+  }
+}
+
+.prag {
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  text-align: left;
+}
+
+.head {
+
+  text-align: center;
+  background: #10cab7;
+  display: block;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 38%;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+
+  position: relative;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  height: 600px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 1px 16px;
+  color: white;
+  font-size: 30px;
+}
+
+#caption {
+  position: relative;
+  top: 5px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+
+  height: 150px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+/* Three columns side by side */
+.citiesRow {
+  margin-top: 120px;
+}
+
+.citiesColumn {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .citiesColumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 370px;
+}
+
+.one,
+.two,
+.Three,
+.Four,
+.Five {
+  background-size: cover;
+
+}
+
+
+.one:hover,
+.two:hover,
+.Three:hover,
+.Four:hover,
+.Five:hover {
+  transform: scale(1.15);
+  transform-origin: center;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+
+}
+
+/* Some left and right padding inside the container */
+.citiesContainer {
+  padding: 0 16px;
+}
+
+.citiesContainer h2 {
+  padding: 0 16px;
+  position: relative;
+  top: 18rem;
+  color: #ffff;
+}
+
+.citiesContainer h5 {
+  padding: 0 16px;
+  position: relative;
+  top: 17.5rem;
+  color: #ffff
+}
+
+
+/* Clear floats */
+.citiesContainer::after,
+.citiesRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+/* navigation bar */
+img[title="logoo"] {
+    display: inline-block;
+    margin-right: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+nav .container {
+    background-color: #dee2e6;
+    border-radius: 10px;
+}
+
+
+.nav-item .nav-link {
+    font-family: 'Unbounded', cursive;
+    color: #1f1f1f !important;
+    font-size: 16px;
+}
+
+.nav-item.active a {
+    background-color: #aaa;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #1f1f1f !important;
+}

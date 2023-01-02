@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Monoton|Reem+Kufi|Righteous|Spicy+Rice|Baloo+Da+2|Lobster|Piedra|Trade+Winds|Galindo|Reem+Kufi|Aref+Ruqaa:wght@700|Saira+Stencil+One|Vollkorn+SC:wght@700|Barriecito|Sedgwick+Ave+Display|Black+And+White+Picture|Bungee+Inline&display=swap");
+
+.container_frm {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.inquiry {
+  font: 35px "Vollkorn SC", serif;
+  font-weight: 700;
+  color: #3c7fac;
+}
+
+.contact {
+  margin: 20px 0;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.contact h1 {
+  font-size: 32px;
+}
+
+.control {
+  width: 500px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: inline-block;
+  padding: 8px 0;
+}
+
+form .submit {
+  background: #3c7fac;
+  border-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  width: 280px;
+  color: #bae3ff;
+}
+
+form .submit:hover {
+  background: #bae3ff;
+  color: #3c7fac;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container_frm {
+    padding-top: 100px;
+  }
+
+  .control {
+    width: 280px;
+  }
+}
+
+
+.container-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.control,
+.name,
+.loginn {
+  background: transparent;
+  outline: none;
+  border: 1px solid gray;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-right: 44px;
+  padding: 8px 10px;
+}
+
+.loginn {
+  width: 280px;
+}
+
+@media (max-width: 768px) {
+  .login {
+    margin-top: 30px;
+  }
+}

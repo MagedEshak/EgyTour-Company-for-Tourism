@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Monoton|Reem+Kufi|Righteous|Spicy+Rice|Baloo+Da+2|Lobster|Piedra|Trade+Winds|Galindo|Reem+Kufi|Aref+Ruqaa:wght@700|Saira+Stencil+One|Vollkorn+SC:wght@700|Barriecito|Sedgwick+Ave+Display|Black+And+White+Picture|Bungee+Inline&display=swap");
+
+.container_frm {
+  padding-top: 50px;
+  padding-left: 80px;
+}
+
+.inquiry {
+  font: 35px "Vollkorn SC", serif;
+  font-weight: 700;
+  color: #10cab7;
+}
+
+.contactus {
+  margin: 20px 0;
+  color:  #333;
+  text-transform: uppercase;
+}
+
+.contactus h1 {
+  font-size: 32px;
+}
+
+.control {
+  width: 500px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 8px;
+  display: inline-block;
+  padding: 8px 0;
+}
+
+form .submit {
+  background: #10cab7;
+  border-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  width: 260px;
+  color: #fff;
+}
+
+form .submit:hover {
+  background: #333;
+  color: #10cab7;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container_frm {
+    padding: 100px 20px;
+  }
+  .control {
+    width: 280px;
+  }
+}
+

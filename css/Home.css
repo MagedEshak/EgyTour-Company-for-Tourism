@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Monoton|Reem+Kufi|Righteous|Spicy+Rice|Baloo+Da+2|Lobster|Piedra|Trade+Winds|Galindo|Reem+Kufi|Aref+Ruqaa:wght@700|Saira+Stencil+One|Vollkorn+SC:wght@700|Barriecito|Sedgwick+Ave+Display|Black+And+White+Picture|Bungee+Inline&display=swap");
+
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*The perspective property is used to give a 3D-positioned element some perspective.
+	transform-style: preserve-3d; to make my elements preserve its 3D position*/
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  /* overflow :scroll >> because elements in html hidden*/
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+  font-size: 250%;
+  font-family: impact;
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  /*Using vw as unit for everything in your website, including font sizes and heights, will make it so that the site is always displayed proportionally to the device's screen width  ( vw =100% ) vh: height of slide*/
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+  /*transform-style: inherit; inherit : to make elements  تحت بعض زي  list */
+  transform-style: inherit;
+}
+
+.head {
+  min-height: 100vh;
+  box-sizing: border-box;
+  transform-style: inherit;
+  position: relative;
+}
+
+.i2 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  /*transform: translateZ move in z axis*/
+  transform: translateZ(0.25px) scale(0.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 12px;
+  border-radius: 5px;
+  /*color with rgb system (a) refer to opacity*/
+  background: rgba(240, 230, 220, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+/*The :last-of-type selector allows you to target the last occurence of an element within its container.
+make me control of last element in its container it in (div)
+*/
+.i2:last-of-type {
+  transform: translateZ(0.4px) scale(0.75) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+/*.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}*/
+
+.title1 {
+  width: 300px;
+  padding: 10px;
+  height: 300px;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  width: 50%;
+  position: relative;
+  margin-left: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+.slide:nth-child(2n + 1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/*لجعل جميع الخلفيات نفس الحجم */
+.slide,
+.slide:before {
+  background: 50% 50% / cover;
+}
+
+#logo {
+  text-align: center;
+  font-size: 375%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("../photos/end.jpg");
+  background-size: cover;
+  z-index: 2;
+}
+
+#title h1 {
+  transform: translateY(150px) translateZ(0.25px) scale(0.8);
+  /*transform-origin: 50% 100%;*/
+}
+
+#slide1 {
+  background-image: url("../photos/cairo.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background-image: url("../photos/pyramid.png");
+  z-index: 2;
+}
+
+#slide3 {
+  background-image: url("../photos/marsaallam\ \(1\).png");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide4 {
+  /* background: #222;*/
+  background-image: url("../photos/aswan.png");
+}
+
+/*video*/
+#v {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  left: 40%;
+  border-radius: 15px;
+}
+
+
+
+

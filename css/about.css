@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Monoton|Reem+Kufi|Righteous|Spicy+Rice|Baloo+Da+2|Lobster|Piedra|Trade+Winds|Galindo|Reem+Kufi|Aref+Ruqaa:wght@700|Saira+Stencil+One|Vollkorn+SC:wght@700|Barriecito|Sedgwick+Ave+Display|Black+And+White+Picture|Bungee+Inline&display=swap");
+
+body {
+  font: 1em "Arial", sans-serif;
+  direction: ltr;
+}
+
+.notic-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../photos/nile.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+.notic-head {
+  background-color: #514743c7;
+  color: #fff;
+  margin: 0;
+  padding: 8px 25px;
+  font: "Aref Ruqaa";
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 991px) {
+  .notic-img {
+    padding: 0 250px;
+  }
+}
+
+.head .note {
+  background-color: #514743c7;
+  padding: 10px;
+  margin: 0;
+  font: 25px "Aref Ruqaa";
+  color: #fff;
+}
+
+/* section 2 */
+.ask {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 80px 50px;
+  background: #3c7fac;
+}
+
+.ask_div {
+  width: 48%;
+}
+
+.ask_img img {
+  width: 100%;
+}
+
+.ask_info img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.ask .ask_head {
+  font: 45px/1.5px "Bungee Inline", cursive;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.ask .answer {
+  font: 29px "Calibri", cursive;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .ask_div {
+    width: 100%;
+  }
+
+  .ask .ask_head {
+    font: 25px/1.5px "Bungee Inline", cursive;
+  }
+}
+
+/*section 3*/
+.notic-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: url("../photos/Luxor-temple.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+.notic-two .notic-head {
+  background-color: #514743c7;
+  color: #fff;
+  margin: 0;
+  padding: 8px 25px;
+  font: "Aref Ruqaa";
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 991px) {
+  .notic-two {
+    padding: 0 250px;
+  }
+}
+
+.notic-two .head .note {
+  background-color: #514743c7;
+  padding: 10px;
+  margin: 0;
+  font: 25px "Aref Ruqaa";
+  color: #fff;
+}
+
+.notic-two .head .note:nth-of-type(2) {
+  line-height: 2;
+  padding: 15px;
+}
+
+/*travel*/
+
+.travel {
+  background-color: #bae3ff;
+  overflow: hidden;
+}
+
+.travel_div {
+  width: 48%;
+}
+
+.travel_info {
+  position: relative;
+  padding: 50px;
+  left: 0;
+}
+
+.travel_img {
+  height: 100%;
+}
+
+.travel_img img {
+  width: 100%;
+  height: 500px;
+}
+
+
+
+.travel:before {
+  position: absolute;
+  width: 50%;
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 0 200px 500px 0;
+  border-color: transparent transparent #3c7fac;
+}
+
+@media (max-width: 991px) {
+  .travel_div {
+    width: 100%;
+  }
+
+  .travel:before {
+    width: 80%;
+    border-width: 0 200px 100% 0;
+  }
+}
+
+.travel .main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  font: 35px "Reem Kufi";
+  color: #fff;
+}
+
+.flight {
+  font: 36px/45px "Reem Kufi";
+  color: #fff;
+}
+
+.subject {
+  width: 585px;
+  font: 20px "Reem Kufi";
+  line-height: 30px;
+  color: #fff;
+}
