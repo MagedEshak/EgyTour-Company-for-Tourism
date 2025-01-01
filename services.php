@@ -19,8 +19,10 @@ $result = $connection->query($sql);
   <link rel="stylesheet" href="css/leon.css" />
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/services.css" />
+  <link rel="stylesheet" type="text/css" href="Css/services.css" />
   <link rel="icon" type="image/png" href="photos/egy.png" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
   <title>services</title>
 </head>
 
@@ -43,8 +45,9 @@ $result = $connection->query($sql);
 
           <?php else: ?>
 
-            <li class="pro"><a href="login/show-data.php"><img style="width: 35px;" src="photos/person.png"
-                alt="Profile"></i></a>
+          <li class="pro"><a href="login/show-data.php"><span class="material-symbols-outlined">
+                person
+              </span></a>
             <ul>
               <li><a href="login/logout.php">Log out</a></li>
             </ul>
@@ -118,109 +121,6 @@ $result = $connection->query($sql);
     </div>
   </div>
 
-
-
-  <!-- cities -->
-
-
-  <div class="citiesRow">
-    <h1 class="head">Cities</h1>
-    <!-- foreach  -->
-    <?php foreach ($city_result as $city_row) { ?>
-
-
-    <!-- City 1 -->
-
-    <?php if ($city_row['id'] == 1) { ?>
-    <a href="subServices.php">
-      <div class="citiesColumn">
-        <div class="card one" style="background-image: url(photos/cities/<?php echo $city_row['city_picture']; ?>);">
-          <div class="citiesContainer">
-            <h2>Egypt</h2>
-            <h5>
-              <?php echo $city_row['city_name']; ?>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </a>
-    <!-- end if -->
-    <?php } ?><!-- end if -->
-    <!-- end City 1 -->
-
-    <!-- City 2 -->
-    <?php if ($city_row['id'] == 2) { ?>
-    <a href="subServices.php">
-      <div class="citiesColumn">
-        <div class="card one" style="background-image: url(photos/cities/<?php echo $city_row['city_picture']; ?>);">
-          <div class="citiesContainer">
-            <h2>Egypt</h2>
-            <h5>
-              <?php echo $city_row['city_name']; ?>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </a>
-    <?php } ?><!-- end if -->
-    <!-- end City 2 -->
-
-    <!-- City 3 -->
-    <?php if ($city_row['id'] == 3) { ?>
-    <a href="subServices.php">
-      <div class="citiesColumn">
-        <div class="card one" style="background-image: url(photos/cities/<?php echo $city_row['city_picture']; ?>);">
-          <div class="citiesContainer">
-            <h2>Egypt</h2>
-            <h5>
-              <?php echo $city_row['city_name']; ?>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </a>
-    <?php } ?><!-- end if -->
-    <!-- end City 3 -->
-
-    <!-- City 4 -->
-    <?php if ($city_row['id'] == 4) { ?>
-    <a href="subServices.php">
-      <div class="citiesColumn">
-        <div class="card one" style="background-image: url(photos/cities/<?php echo $city_row['city_picture']; ?>);">
-          <div class="citiesContainer">
-            <h2>Egypt</h2>
-            <h5>
-              <?php echo $city_row['city_name']; ?>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </a>
-    <?php } ?><!-- end if -->
-    <!-- end City 4 -->
-
-    <!-- City 5 -->
-    <?php if ($city_row['id'] == 5) { ?>
-    <a href="subServices.php">
-      <div class="citiesColumn">
-        <div class="card one" style="background-image: url(photos/cities/<?php echo $city_row['city_picture']; ?>);">
-          <div class="citiesContainer">
-            <h2>Egypt</h2>
-            <h5>
-              <?php echo $city_row['city_name']; ?>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <?php } ?><!-- end foreach -->
-    <?php } ?><!-- end foreach -->
-    <!-- end City 5 -->
-
-  </div>
-
-
   <!-- offers -->
   <div id="container">
     <h1 class="head">Honey moon</h1>
@@ -229,7 +129,10 @@ $result = $connection->query($sql);
       <!-- foreach  -->
       <?php foreach ($result as $row) { ?>
 
-      <a href="trips/<?php echo $row['id']; ?>.php" class="divimg">
+
+      <!-- trip 1 -->
+      <?php if ($row['id'] == 1) { ?>
+      <a href="trips/trip1.php" class="divimg">
         <img style="height: 300px" src="photos/<?php echo $row['photo']; ?>" />
         <h2 class="p">
           <?php echo $row['trip'] ?>
@@ -246,13 +149,84 @@ $result = $connection->query($sql);
         </p>
 
       </a>
+      <?php } ?><!-- end if -->
+      <!-- end trip 1 -->
+
+      <!-- trip 2 -->
+      <?php if ($row['id'] == 2) { ?>
+      <a href="trips/trip2.php" class="divimg">
+        <img style="height: 300px" src="photos/<?php echo $row['photo']; ?>" />
+        <h2 class="p">
+          <?php echo $row['trip'] ?>
+        </h2>
+        <h6 class="p">
+          <?php echo $row['address'] ?>
+        </h6>
+        <p class="prag">
+          <?php echo $row['descrition'] ?>
+          <hr>
+          <h4>Trip Price is
+            <?php echo $row['trip_price'] . " EGP" ?>
+          </h4>
+        </p>
+
+      </a>
+      <?php } ?><!-- end if -->
+      <!-- end trip 2 -->
+
+      <!-- trip  3-->
+      <?php if ($row['id'] == 3) { ?>
+      <a href="trips/trip3.php" class="divimg">
+        <img style="height: 300px" src="photos/<?php echo $row['photo']; ?>" />
+        <h2 class="p">
+          <?php echo $row['trip'] ?>
+        </h2>
+        <h6 class="p">
+          <?php echo $row['address'] ?>
+        </h6>
+        <p class="prag">
+          <?php echo $row['descrition'] ?>
+          <hr>
+          <h4>Trip Price is
+            <?php echo $row['trip_price'] . " EGP" ?>
+          </h4>
+        </p>
+
+      </a>
+      <?php } ?><!-- end if -->
+      <!-- end trip 3 -->
+
+      <!-- trip  4-->
+      <?php if ($row['id'] == 5) { ?>
+      <a href="trips/trip5.php" class="divimg">
+        <img style="height: 300px" src="photos/services/Trips/sharm/trip2/<?php echo $row['photo']; ?>" />
+        <h2 class="p">
+          Ras Muhammad National Park
+        </h2>
+        <h6 class="p">
+          <?php echo $row['address'] ?>
+        </h6>
+        <p class="prag">
+          <?php echo $row['descrition'] ?>
+          <hr>
+          <h4>Trip Price is
+            <?php echo $row['trip_price'] . " EGP" ?>
+          </h4>
+        </p>
+
+      </a>
+      <?php } ?><!-- end if -->
+      <!-- end trip 4 -->
+
+
+
+
       <?php } ?><!-- end foreach -->
 
     </div>
 
     <footer class="w3-container w3-padding-16" style="margin-top:32px">Powered by <a href="Home.php" title="W3.CSS"
         target="_blank" class="w3-hover-text-green">EgyTour</a></footer>
-        
   </div>
   <script src="js/Slideshow.js"></script>
   <script src="js/jquery-3.5.1.min.js "></script>
