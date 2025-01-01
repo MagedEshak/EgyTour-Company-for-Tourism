@@ -13,11 +13,12 @@
   <link rel="stylesheet" type="text/css" href="Css/contactus.css" />
   <!-- Main Template CSS File -->
   <link rel="stylesheet" href="css/leon.css" />
-
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
   <link rel="icon" type="image/png" href="photos/egy.png" />
 
   <!-- Bootstrap CSS -->
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
   <title>Contact us</title>
 
@@ -43,8 +44,9 @@
 
           <?php else: ?>
 
-            <li class="pro"><a href="login/show-data.php"><img style="width: 35px;" src="photos/person.png"
-                alt="Profile"></i></a>
+          <li class="pro"><a href="login/show-data.php"><span class="material-symbols-outlined">
+                person
+              </span></i></a>
             <ul>
               <li><a href="login/logout.php">Log out</a></li>
             </ul>

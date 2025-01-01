@@ -7,19 +7,20 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Main Template CSS File -->
-  <link rel="stylesheet" href="css/leon.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/leon.css" />
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="Css/Home.css" />
   <link rel="icon" type="image/png" href="photos/egy.png" />
-  
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
   <title>Home</title>
 </head>
 
 <body>
-  <!-- Start Header -->
-  <div class="header">
+   <!-- Start Header -->
+   <div class="header">
     <div class="container">
       <img class="logo" src="photos/egy.png" alt="" />
       <div class="links">
@@ -36,8 +37,9 @@
 
           <?php else: ?>
 
-          <li class="pro"><a href="login/show-data.php"><img style="width: 35px;" src="photos/person.png"
-                alt="Profile"></i></a>
+          <li class="pro"><a href="login/show-data.php"><span class="material-symbols-outlined">
+                person
+              </span></i></a>
             <ul>
               <li><a href="login/logout.php">Log out</a></li>
             </ul>
@@ -95,7 +97,7 @@
           left: 50%;
           top: 20%;
           transform: translateZ(0.25px) scale(0.75) rotate(2deg);
-        " src="photos/22.jpg" />
+        " src="https://k.top4top.io/p_16145fsap2.jpg" />
   </div>
 
   <div id="slide2" class="slide">
@@ -134,7 +136,7 @@
 
   <div id="slide4" class="slide">
     <iframe id="v" src="https://www.youtube.com/embed/8J4lBbiHiro"> </iframe>
-    <img class="i2" src="photos/23.jpeg" />
+    <img class="i2" src="https://j.top4top.io/p_1614oih2t1.jpg" />
     <img class="i2" src="photos/gallary_1.jpg" />
   </div>
 
